@@ -1,0 +1,54 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.calsigrid  {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+     
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+}
+
+.calsigrid   > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid whitesmoke;
+    background-color: rgb(173, 229, 236);
+}
+
+.calsigrid  > button:hover{
+    background-color: rgb(125, 230, 148);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output  {
+    grid-column: 1/-1;
+    background-color: rgb(6, 24, 1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 9px;
+    word-wrap: break-word;
+
+    word-break: break-all;
+}
+
+.output .prevop {
+    color: rgb(84, 136, 49);
+    font-size: 1.5rem;
+}
+
+.output .currentop {
+    color: rgb(197, 240, 170);
+    font-size: 2.5rem;
+     
+}
+ 
