@@ -9,27 +9,24 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>calci</title>
-    <link rel="stylesheet" href="calci.css">
+    <link rel="stylesheet" href="calculator.css">
 
 </head>
 
 <body>
     <section>
-    <div class="calsigrid" id="calculator-grid">
+    <div class="calculator_grid" id="calculator-grid">
 
-        <div class="output">
-            <div class="prevop">Calculator</div>
-            <div class="currentop" id="screen"> </div>
+        <div class="calculator_output">
+            <div class="brand_name">Calculator</div>
+            <div class="current_output" id="screen"> </div>
         </div>
-
-        <!-- <div class="btn">    -->
-
-        <!-- <a href="#hist"> -->
-        <button onclick="historyOfCalculation()" class="his">H</button>
-        <!-- </a> -->
+     
+        <button onclick="historyOfCalculation()" class="history">H</button>     <!-- we get history of calculation -->
+        
 
         <button onclick="allclear()" class="ac">AC</button>
-        <button onclick="del()" class="data-del"><i class="fas fa-backspace"></i></button> <!--font awesome-->
+        <button onclick="del()" class="data-del"><i class="fas fa-backspace"></i></button>     <!--font awesome-->
         <button onclick="op('/')" class="data-op">/</button>
         <button onclick="op('%')" class="data-op">%</button>
         <button onclick="sin()" class="data-op">sin</button>
@@ -51,10 +48,11 @@
         <button onclick="op('.')" class="datan">.</button>
         <button onclick="number('0')" class="datan0">0</button>
         <button onclick="ans()" class="span-two">=</button>
-        <!-- </div> -->
-
+        
     </div>
 </section>
+
+<!-- history of calculation -->
 
     <section>
         <div id="hist">
@@ -63,7 +61,7 @@
             </ul>
         </div>
     </section>
-    <script src="calciu.js"></script>
+    <script src="calculator.js"></script>
 </body>
 
 </html>

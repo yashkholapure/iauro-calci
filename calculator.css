@@ -3,7 +3,7 @@ body{
     margin: 0;
     background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
-.calsigrid  {
+.calculator_grid  {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -13,14 +13,14 @@ body{
     grid-template-rows: minmax(120px,auto) repeat(5,100px);
 }
 
-.calsigrid   > button{
+.calculator_grid   > button{
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid whitesmoke;
     background-color: rgb(173, 229, 236);
 }
 
-.calsigrid  > button:hover{
+.calculator_grid  > button:hover{
     background-color: rgb(125, 230, 148);
 }
 
@@ -28,7 +28,7 @@ body{
     grid-column: span 2;
 }
 
-.output  {
+.calculator_output  {
     grid-column: 1/-1;
     background-color: rgb(6, 24, 1);
     display: flex;
@@ -41,12 +41,12 @@ body{
     word-break: break-all;
 }
 
-.output .prevop {
+.calculator_output .brand_name {
     color: rgb(84, 136, 49);
     font-size: 1.5rem;
 }
 
-.output .currentop {
+.calculator_output .current_output {
     color: rgb(197, 240, 170);
     font-size: 2.5rem;
      
